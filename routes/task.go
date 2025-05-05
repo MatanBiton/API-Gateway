@@ -185,13 +185,13 @@ func updateTask(service tasks.TasksServiceClient) gin.HandlerFunc {
 				Id:     uriParams.ID,
                 // TODO: We need to get this from the request...
 				// Complete: bodyParams.Complete,
-                Complete: false,
+                Complete: bodyParams.Complete,
                 Title:  bodyParams.Title,
                 Description: bodyParams.Description,
                 Expertise: bodyParams.Expertise,
                 PatientId: bodyParams.PatientId,
                 // TODO: remove this!
-                CreatedAt: "2020-02-20",
+                //CreatedAt: "2020-02-20",
 			},
 		})
 		if err != nil {

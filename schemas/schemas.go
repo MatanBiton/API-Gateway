@@ -131,5 +131,5 @@ type Task struct {
 
 type TaskUpdate struct {
 	TaskBase
-	// TODO:
+	Complete bool `json:"complete"`
 }
