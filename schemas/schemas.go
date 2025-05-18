@@ -130,7 +130,7 @@ type Task struct {
 }
 
 type TaskUpdate struct {
-	PatientId   int32  `json:"patient_id" binding:"required"` // Copied from TaskBase
+	PatientID   int32  `json:"patient_id" binding:"required"` // Copied from TaskBase
     Expertise   string `json:"expertise"`                     // Copied from TaskBase
     Title       string `json:"title" binding:"required"`      // Copied from TaskBase
     Description string `json:"description"`                   // Copied from TaskBase

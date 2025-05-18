@@ -189,7 +189,7 @@ func updateTask(service tasks.TasksServiceClient) gin.HandlerFunc {
                 Title:  bodyParams.Title,
                 Description: bodyParams.Description,
                 Expertise: bodyParams.Expertise,
-                PatientId: bodyParams.PatientId,
+                PatientId: bodyParams.PatientID,
                 // TODO: remove this!
                 //CreatedAt: "2020-02-20",
 			},
